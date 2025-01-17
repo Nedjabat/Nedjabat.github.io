@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream from IP Address</title>
+</head>
+<body>
+    <video id="stream" width="640" height="360" controls>
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        // Function to set the stream URL with the basic authentication credentials
+        function setStreamUrl() {
+            const ip = 'http://192.168.0.100/'; // Replace with your IP address and stream path
+            const username = 'admin'; // Replace with your username
+            const password = '12345678!'; // Replace with your password
+            
+            // Construct the URL with basic authentication credentials
+            const authUrl = `http://${admin}:${12345678!}@192.168.0.100`;
+            
+            // Set the video source
+            const video = document.getElementById('stream');
+            video.src = authUrl;
+        }
+
+        // Set the stream URL when the page loads
+        window.onload = setStreamUrl;
+    </script>
+</body>
+</html>
